@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>lendAhand | Volunteer Across Your City</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">lendAhand</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#opportunities">Opportunities</a>
+    <a href="#credits">Credits</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Volunteer. Connect. Make an Impact.</h1>
+  <p>Find volunteering opportunities across your city.</p>
+
+  <select id="citySelect">
+    <option value="">Select your city</option>
+    <option>Bangalore</option>
+    <option>Hyderabad</option>
+    <option>Mumbai</option>
+    <option>Chennai</option>
+  </select>
+
+  <button onclick="explore()">Explore Opportunities</button>
+</section>
+
+<section id="opportunities">
+  <h2>Available Opportunities</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Tree Plantation Drive</h3>
+      <p>📍 Bangalore</p>
+      <p>Help make the city greener.</p>
+      <button>Apply</button>
+    </div>
+
+    <div class="card">
+      <h3>Teach School Kids</h3>
+      <p>📍 Hyderabad</p>
+      <p>Weekend volunteering opportunity.</p>
+      <button>Apply</button>
+    </div>
+
+    <div class="card">
+      <h3>Beach Cleanup</h3>
+      <p>📍 Chennai</p>
+      <p>Protect marine life.</p>
+      <button>Apply</button>
+    </div>
+  </div>
+</section>
+
+<section id="credits" class="credits">
+  <h2>Credits & Recognition</h2>
+  <ul>
+    <li>🏅 Credits issued by <strong>1M1B Foundation</strong></li>
+    <li>📜 Participation certificates</li>
+    <li>⭐ Recognition badges for volunteers</li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>About lendAhand</h2>
+  <p>
+    lendAhand connects individuals with verified volunteering opportunities
+    across cities, helping people give back to society while earning
+    recognition and credits.
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 lendAhand. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
