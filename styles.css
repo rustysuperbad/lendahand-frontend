@@ -1,8 +1,20 @@
-.header {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #fff9e6;
+  color: #1f2933;
+}
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 48px;
+  padding: 18px 48px;
 }
 
 .brand {
@@ -11,17 +23,16 @@
   gap: 14px;
 }
 
-.logo {
-  width: 64px;
-  height: 64px;
+.brand img {
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
 }
 
-.brand-name {
-  font-size: 2rem;        /* BIGGER TEXT */
+.brand span {
+  font-size: 1.9rem;
   font-weight: 700;
   color: #eab308;
-  letter-spacing: -0.5px;
 }
 
 nav a {
@@ -31,4 +42,109 @@ nav a {
   color: #1f2933;
 }
 
+.hero {
+  text-align: center;
+  padding: 110px 20px;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  color: #eab308;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+.actions {
+  margin-top: 30px;
+}
+
+.actions select,
+.actions button {
+  padding: 14px 22px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin: 6px;
+}
+
+.actions button {
+  background: #facc15;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section {
+  padding: 80px 60px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #eab308;
+  margin-bottom: 15px;
+}
+
+.subtext {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card span {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #92400e;
+}
+
+.highlight {
+  background: rgba(250, 204, 21, 0.25);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+  text-align: center;
+}
+
+.box {
+  max-width: 620px;
+  margin: auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+}
+
+.about {
+  max-width: 720px;
+  margin: auto;
+  display: grid;
+  gap: 22px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.7;
+}
 
