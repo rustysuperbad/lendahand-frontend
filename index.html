@@ -5,22 +5,18 @@
   <title>lendAhand</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
+<header class="navbar">
   <div class="brand">
-    <img src="logo1.png.png" alt="lendAhand logo">
+    <img src="assets/logo.png" alt="lendAhand logo">
     <span>lendAhand</span>
   </div>
 
   <nav>
-    <a href="#home">Home</a>
     <a href="#opportunities">Opportunities</a>
     <a href="#impact">Impact</a>
     <a href="#credits">Credits</a>
@@ -28,97 +24,100 @@
   </nav>
 </header>
 
-<section class="hero" id="home">
-  <h1>Lend a Hand.<br><span>Create Real Impact.</span></h1>
-  <p>
-    A city-first volunteering platform connecting people
-    with meaningful opportunities and recognized social impact.
-  </p>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Lend a Hand.<br><span>Create Real Impact.</span></h1>
+    <p>
+      Discover verified volunteering opportunities in your city
+      and turn intention into action.
+    </p>
 
-  <div class="actions">
-    <select>
-      <option>Select your city</option>
-      <option>Bangalore</option>
-      <option>Hyderabad</option>
-      <option>Mumbai</option>
-    </select>
-    <button>Explore Opportunities</button>
+    <div class="hero-actions">
+      <select>
+        <option>Select your city</option>
+        <option>Bangalore</option>
+        <option>Hyderabad</option>
+        <option>Mumbai</option>
+      </select>
+      <button>Explore Opportunities</button>
+    </div>
   </div>
 </section>
 
 <section id="opportunities">
-  <h2>Volunteering Opportunities</h2>
-  <p class="subtext">
-    Opportunities open periodically. Reserve a slot and be part of the change.
-  </p>
+  <h2>🤝 Volunteering Opportunities</h2>
 
   <div class="cards">
     <div class="card">
-      <h3>Slot Empty</h3>
-      <p>City-based opportunity</p>
-      <span>Upcoming</span>
+      <img src="assets/volunteer1.jpg" alt="">
+      <div class="card-body">
+        <h3>Community Clean-Up</h3>
+        <p>📍 City-based · Weekend</p>
+      </div>
     </div>
+
     <div class="card">
-      <h3>Slot Empty</h3>
-      <p>City-based opportunity</p>
-      <span>Upcoming</span>
+      <img src="assets/volunteer2.jpg" alt="">
+      <div class="card-body">
+        <h3>Teaching Assistance</h3>
+        <p>📍 City-based · Ongoing</p>
+      </div>
     </div>
+
     <div class="card">
-      <h3>Slot Empty</h3>
-      <p>City-based opportunity</p>
-      <span>Upcoming</span>
+      <img src="assets/volunteer3.jpg" alt="">
+      <div class="card-body">
+        <h3>Food Distribution</h3>
+        <p>📍 City-based · Upcoming</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="impact" class="highlight">
-  <h2>Why lendAhand?</h2>
+<section id="impact" class="soft-bg">
+  <h2>🌍 Why lendAhand?</h2>
 
   <div class="grid">
     <div>
       <h3>City-Centric</h3>
-      <p>Opportunities tailored to local community needs.</p>
+      <p>Opportunities tailored to real local needs.</p>
     </div>
     <div>
-      <h3>Verified Organizations</h3>
-      <p>Collaborations with trusted NGOs and foundations.</p>
+      <h3>Verified NGOs</h3>
+      <p>Every organization is screened and trusted.</p>
     </div>
     <div>
-      <h3>Recognized Contribution</h3>
-      <p>Earn verified credits and certificates.</p>
+      <h3>Recognized Impact</h3>
+      <p>Earn credits and certificates for your work.</p>
     </div>
   </div>
 </section>
 
 <section id="credits">
-  <h2>Credits & Recognition</h2>
+  <h2>🏅 Credits & Recognition</h2>
   <div class="box">
     <p>
       lendAhand partners with foundations such as <strong>1M1B</strong>
-      to issue participation credits that validate your volunteering journey.
+      to issue verified volunteering credits.
     </p>
     <ul>
       <li>✔ Digital credits</li>
-      <li>✔ Downloadable certificates</li>
+      <li>✔ Certificates</li>
       <li>✔ Recognition badges</li>
     </ul>
   </div>
 </section>
 
 <section id="about">
-  <h2>About lendAhand</h2>
+  <h2>💛 About lendAhand</h2>
   <div class="about">
     <p>
-      lendAhand was built on a simple belief — volunteering should be
-      accessible, organized, and meaningful.
+      lendAhand was built to simplify volunteering by connecting
+      individuals with trusted causes.
     </p>
     <p>
-      We connect volunteers with verified organizations, centralize
-      opportunities, and transform goodwill into measurable impact.
-    </p>
-    <p>
-      Whether you are a student, professional, or organization,
-      lendAhand provides the structure for a transparent volunteering ecosystem.
+      We centralize opportunities, track participation, and
+      transform goodwill into measurable impact.
     </p>
   </div>
 </section>
@@ -129,4 +128,5 @@
 
 </body>
 </html>
+
 
