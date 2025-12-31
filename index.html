@@ -2,21 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>lendAhand</title>
+  <title>lendAhand | Community Volunteering</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="navbar">
+<header>
   <div class="brand">
-    <img src="logo1.png.png" alt="lendAhand logo">
+    <div class="logo-wrap">
+      <img src="assets/logo.png" alt="lendAhand logo">
+    </div>
     <span>lendAhand</span>
   </div>
 
   <nav>
+    <a href="#home">Home</a>
     <a href="#opportunities">Opportunities</a>
     <a href="#impact">Impact</a>
     <a href="#credits">Credits</a>
@@ -24,12 +27,19 @@
   </nav>
 </header>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Lend a Hand.<br><span>Create Real Impact.</span></h1>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <img class="hero-logo" src="assets/logo.png" alt="lendAhand logo">
+
+    <h1>
+      Lend a Hand.<br>
+      <span>Create Real Impact.</span>
+    </h1>
+
     <p>
-      Discover verified volunteering opportunities in your city
-      and turn intention into action.
+      A city-first volunteering platform designed to connect individuals
+      with meaningful opportunities and recognized social impact.
     </p>
 
     <div class="hero-actions">
@@ -44,90 +54,117 @@
   </div>
 </section>
 
+<!-- OPPORTUNITIES -->
 <section id="opportunities">
-  <h2>🤝 Volunteering Opportunities</h2>
+  <div class="container">
+    <h2>Volunteering Opportunities</h2>
+    <p class="section-subtext">
+      New opportunities open regularly. Secure a slot and contribute to your community.
+    </p>
 
-  <div class="cards">
-    <div class="card">
-      <img src="assets/volunteer1.jpg" alt="">
-      <div class="card-body">
-        <h3>Community Clean-Up</h3>
-        <p>📍 City-based · Weekend</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Slot Empty</h3>
+        <p>City-based volunteering opportunity</p>
+        <span class="tag">Upcoming</span>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="assets/volunteer2.jpg" alt="">
-      <div class="card-body">
-        <h3>Teaching Assistance</h3>
-        <p>📍 City-based · Ongoing</p>
+      <div class="card">
+        <h3>Slot Empty</h3>
+        <p>City-based volunteering opportunity</p>
+        <span class="tag">Upcoming</span>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="assets/volunteer3.jpg" alt="">
-      <div class="card-body">
-        <h3>Food Distribution</h3>
-        <p>📍 City-based · Upcoming</p>
+      <div class="card">
+        <h3>Slot Empty</h3>
+        <p>City-based volunteering opportunity</p>
+        <span class="tag">Upcoming</span>
       </div>
     </div>
   </div>
 </section>
 
-<section id="impact" class="soft-bg">
-  <h2>🌍 Why lendAhand?</h2>
+<!-- IMPACT -->
+<section id="impact" class="highlight">
+  <div class="container">
+    <h2>Why lendAhand?</h2>
 
-  <div class="grid">
-    <div>
-      <h3>City-Centric</h3>
-      <p>Opportunities tailored to real local needs.</p>
-    </div>
-    <div>
-      <h3>Verified NGOs</h3>
-      <p>Every organization is screened and trusted.</p>
-    </div>
-    <div>
-      <h3>Recognized Impact</h3>
-      <p>Earn credits and certificates for your work.</p>
+    <div class="impact-grid">
+      <div>
+        <h3>City-Focused</h3>
+        <p>Opportunities curated specifically for your city.</p>
+      </div>
+      <div>
+        <h3>Trusted Partners</h3>
+        <p>Verified NGOs and foundations ensure real impact.</p>
+      </div>
+      <div>
+        <h3>Recognized Effort</h3>
+        <p>Earn certificates and participation credits.</p>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- CREDITS -->
 <section id="credits">
-  <h2>🏅 Credits & Recognition</h2>
-  <div class="box">
-    <p>
-      lendAhand partners with foundations such as <strong>1M1B</strong>
-      to issue verified volunteering credits.
-    </p>
-    <ul>
-      <li>✔ Digital credits</li>
-      <li>✔ Certificates</li>
-      <li>✔ Recognition badges</li>
-    </ul>
+  <div class="container">
+    <h2>Credits & Recognition</h2>
+
+    <div class="credit-box">
+      <p>
+        lendAhand collaborates with foundations such as
+        <strong>1M1B</strong> to issue verified participation credits
+        for completed volunteering activities.
+      </p>
+
+      <ul>
+        <li>✔ Digital certificates</li>
+        <li>✔ Foundation-issued credits</li>
+        <li>✔ Volunteer profile recognition</li>
+      </ul>
+    </div>
   </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
-  <h2>💛 About lendAhand</h2>
-  <div class="about">
-    <p>
-      lendAhand was built to simplify volunteering by connecting
-      individuals with trusted causes.
-    </p>
-    <p>
-      We centralize opportunities, track participation, and
-      transform goodwill into measurable impact.
-    </p>
+  <div class="container">
+    <h2>About lendAhand</h2>
+
+    <div class="about-grid">
+      <p>
+        lendAhand was created to make volunteering simple, transparent,
+        and accessible. Many people want to contribute but lack a
+        centralized, trusted place to start.
+      </p>
+
+      <p>
+        Our platform bridges individuals, organizations, and foundations
+        by offering a structured system for discovering opportunities,
+        tracking participation, and recognizing impact.
+      </p>
+
+      <p>
+        Whether you are a student, professional, or organization,
+        lendAhand provides the tools to build meaningful social
+        engagement at scale.
+      </p>
+    </div>
   </div>
 </section>
 
 <footer>
-  © 2025 lendAhand · Built for community impact
+  <p>© 2025 lendAhand · Built for community impact</p>
 </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
 
 </body>
 </html>
+
 
 
 
