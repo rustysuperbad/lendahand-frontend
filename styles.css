@@ -18,6 +18,38 @@ body {
   background: linear-gradient(180deg, var(--bg-main), var(--bg-soft));
   color: var(--text-dark);
 }
+.masthead {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    #f5c542,
+    #f9d976
+  );
+  font-family: 'Inter', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.masthead .brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  color: #1a1a1a;
+}
+
+.masthead .creator {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+  opacity: 0.85;
+}
+
 
 .container {
   max-width: 1200px;
@@ -234,6 +266,7 @@ footer {
 }
 
 }
+
 
 
 
