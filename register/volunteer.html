@@ -8,23 +8,34 @@
 </head>
 <body>
 
-  <main class="auth-container">
-    <h1>Volunteer Registration</h1>
-    <p>Join lendAhand and start volunteering in your city.</p>
+<div class="auth-container">
+  <h1>Volunteer Registration</h1>
+  <p class="subtitle">
+    Join lendAhand and make a difference in your city.
+  </p>
 
-    <form id="volunteer-form">
-      <input type="text" id="name" placeholder="Full Name" required />
-      <input type="email" id="email" placeholder="Email" required />
-      <input type="password" id="password" placeholder="Password" required />
-      <input type="text" id="city" placeholder="City" required />
-      <input type="number" id="age" placeholder="Age" required />
+  <form id="volunteer-form">
+    <input type="text" id="name" placeholder="Full Name" required />
+    <input type="email" id="email" placeholder="Email Address" required />
+    <input type="password" id="password" placeholder="Password" required />
 
-      <button type="submit">Create Account</button>
-    </form>
+    <select id="city" required>
+      <option value="">Select City</option>
+      <option>Bangalore</option>
+      <option>Hyderabad</option>
+      <option>Mumbai</option>
+    </select>
 
-    <p id="message"></p>
-  </main>
+    <button type="submit">Create Account</button>
+  </form>
 
-  <script type="module" src="volunteer.js"></script>
+  <p class="small">
+    Already registered? Login coming soon.
+  </p>
+</div>
+
+<script type="module" src="volunteer.js"></script>
+
 </body>
 </html>
+
