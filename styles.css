@@ -241,6 +241,21 @@ footer {
 
 /* MOBILE */
 @media (max-width: 768px) {
+
+   .masthead {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+
+  .masthead .brand {
+    font-size: 1.1rem;
+  }
+
+  .masthead .creator {
+    font-size: 0.85rem;
+  }
+
   nav {
     display: none;
   }
@@ -266,6 +281,7 @@ footer {
 }
 
 }
+
 
 
 
