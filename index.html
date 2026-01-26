@@ -2,165 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>lendAhand | Community Volunteering</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lendAhand</title>
 
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font (optional but clean) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
   <header class="navbar">
-  <div class="logo-area">
-    <img src="logo.png" alt="lendAhand logo" class="logo" />
-    <span class="brand">lendAhand</span>
-  </div>
-
-  <nav class="nav-links">
-    <a href="#about">About</a>
-    <a href="#opportunities">Opportunities</a>
-    <a href="/register/volunteer.html" class="cta">Sign Up</a>
-  </nav>
-</header>
-<header>
-  <div class="brand">
-    <div class="logo-wrap">
-      <img src="logo1.png.png" alt="lendAhand logo">
+    <div class="nav-left">
+      <img src="logo1.png" alt="lendAhand logo" class="logo">
+      <span class="brand">lendAhand</span>
     </div>
-    <span>lendAhand</span>
-  </div>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#opportunities">Opportunities</a>
-    <a href="#impact">Impact</a>
-    <a href="#credits">Credits</a>
-    <a href="#about">About</a>
-  </nav>
-</header>
+    <nav class="nav-right">
+      <a href="#about">About</a>
+      <a href="#opportunities">Opportunities</a>
+      <a href="register/volunteer.html" class="btn-primary">Sign Up</a>
+    </nav>
+  </header>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="container hero-content">
-    <img class="hero-logo" src="logo1.png.png" alt="lendAhand logo">
+  <!-- ================= MAIN WRAPPER (THIS WAS MISSING) ================= -->
+  <main class="page">
 
-    <h1>
-      Lend a Hand.<br>
-      <span>Create Real Impact.</span>
-    </h1>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-card">
+        <div class="hero-icon">🤝</div>
+        <h1>
+          Lend a Hand.<br />
+          <span>Create Real Impact.</span>
+        </h1>
+        <p>
+          A city-first volunteering platform designed to connect individuals
+          with meaningful opportunities and recognized social impact.
+        </p>
 
-    <p>
-      A city-first volunteering platform designed to connect individuals
-      with meaningful opportunities and recognized social impact.
-    </p>
-
-    <div class="hero-actions">
-      <select>
-        <option>Select your city</option>
-        <option>Bangalore</option>
-        <option>Hyderabad</option>
-        <option>Mumbai</option>
-      </select>
-      <button>Explore Opportunities</button>
-    </div>
-  </div>
-</section>
-
-<!-- OPPORTUNITIES -->
-<section id="opportunities">
-  <div class="container">
-    <h2>Volunteering Opportunities</h2>
-    <p class="section-subtext">
-      New opportunities open regularly. Secure a slot and contribute to your community.
-    </p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Slot Empty</h3>
-        <p>City-based volunteering opportunity</p>
-        <span class="tag">Upcoming</span>
+        <a href="register/volunteer.html" class="btn-secondary">
+          Get Started
+        </a>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Slot Empty</h3>
-        <p>City-based volunteering opportunity</p>
-        <span class="tag">Upcoming</span>
+    <!-- ================= OPPORTUNITIES ================= -->
+    <section id="opportunities" class="opportunities">
+      <h2>Volunteering Opportunities</h2>
+      <p class="section-subtitle">
+        New opportunities open regularly. Secure a slot and contribute to your community.
+      </p>
+
+      <div class="opportunity-grid">
+        <div class="opportunity-card">
+          <h3>Slot Empty</h3>
+          <p>City-based volunteering opportunity</p>
+          <span class="tag">Upcoming</span>
+        </div>
+
+        <div class="opportunity-card">
+          <h3>Slot Empty</h3>
+          <p>City-based volunteering opportunity</p>
+          <span class="tag">Upcoming</span>
+        </div>
+
+        <div class="opportunity-card">
+          <h3>Slot Empty</h3>
+          <p>City-based volunteering opportunity</p>
+          <span class="tag">Upcoming</span>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Slot Empty</h3>
-        <p>City-based volunteering opportunity</p>
-        <span class="tag">Upcoming</span>
+    <!-- ================= WHY ================= -->
+    <section class="why">
+      <h2>Why lendAhand?</h2>
+
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>City-Focused</h3>
+          <p>Opportunities curated specifically for your city.</p>
+        </div>
+
+        <div class="why-item">
+          <h3>Trusted Partners</h3>
+          <p>Verified NGOs and foundations ensure real impact.</p>
+        </div>
+
+        <div class="why-item">
+          <h3>Recognized Effort</h3>
+          <p>Earn certificates and participation credits.</p>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- IMPACT -->
-<section id="impact" class="highlight">
-  <div class="container">
-    <h2>Why lendAhand?</h2>
-
-    <div class="impact-grid">
-      <div>
-        <h3>City-Focused</h3>
-        <p>Opportunities curated specifically for your city.</p>
-      </div>
-      <div>
-        <h3>Trusted Partners</h3>
-        <p>Verified NGOs and foundations ensure real impact.</p>
-      </div>
-      <div>
-        <h3>Recognized Effort</h3>
-        <p>Earn certificates and participation credits.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <h2>About lendAhand</h2>
-
-    <div class="about-grid">
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about">
+      <h2>About lendAhand</h2>
       <p>
         lendAhand was created to make volunteering simple, transparent,
-        and accessible. Many people want to contribute but lack a
-        centralized, trusted place to start.
+        and accessible. Many people want to contribute but lack a centralized,
+        trusted place to start.
       </p>
 
       <p>
-        Our platform bridges individuals, organizations, and foundations
-        by offering a structured system for discovering opportunities,
-        tracking participation, and recognizing impact.
+        Our platform bridges individuals, organizations, and foundations by
+        offering a structured system for discovering opportunities, tracking
+        participation, and recognizing impact.
       </p>
+    </section>
 
-      <p>
-        Whether you are a student, professional, or organization,
-        lendAhand provides the tools to build meaningful social
-        engagement at scale.
-      </p>
-    </div>
-  </div>
-</section>
+  </main>
 
-<div class="footer-identity">
-  <span class="community">Grow with volunteering.</span>
-  <span class="divider">•</span>
-  <span class="creator">by Athrey Ram Rao</span>
-</div>
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>
+      Built for community · Crafted by <strong>Athrey Ram</strong>
+    </p>
+  </footer>
 
-
-<script src="script.js"></script>
+  <!-- Script -->
+  <script src="script.js"></script>
 </body>
 </html>
-
-</body>
-</html>
-
-
-
-
-
 
 
 
