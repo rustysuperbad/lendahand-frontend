@@ -13,7 +13,7 @@ signupBtn.addEventListener("click", async () => {
 
   console.log("Signing up:", email);
 
-  const { data, error } = await supabase.auth.signUp({
+  const { data, error } = await supabaseClient.auth.signUp({
     email,
     password,
     options: {
@@ -32,4 +32,5 @@ signupBtn.addEventListener("click", async () => {
     alert("Account created! Check your email.");
   }
 });
+
 
