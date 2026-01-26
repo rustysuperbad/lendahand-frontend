@@ -1,38 +1,35 @@
-import { supabase } from "../supabase.js";
+const signupBtn = document.getElementById("signupBtn");
 
-const form = document.getElementById("volunteer-form");
-const message = document.getElementById("message");
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
+signupBtn.addEventListener("click", async () => {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
   const city = document.getElementById("city").value;
-  const age = document.getElementById("age").value;
 
-  message.textContent = "Creating account...";
-
-  const { data, error } = await supabase.auth.signUp({
-    email,
-    password
-  });
-
-  if (error) {
-    message.textContent = error.message;
+  if (!name || !email || !password || !city) {
+    alert("Please fill all fields");
     return;
   }
 
-  const user = data.user;
+  console.log("Signing up:", email);
 
-  await supabase.from("profiles").insert({
-    id: user.id,
-    full_name: name,
-    role: "volunteer",
-    city: city,
-    approved: true
+  const { data, error } = await supabase.auth.signUp({
+    email,
+    password,
+    options: {
+      data: {
+        name,
+        city,
+        role: "volunteer"
+      }
+    }
   });
 
-  message.textContent = "Account created! You can now log in.";
+  if (error) {
+    console.error(error);
+    alert(error.message);
+  } else {
+    alert("Account created! Check your email.");
+  }
 });
+
